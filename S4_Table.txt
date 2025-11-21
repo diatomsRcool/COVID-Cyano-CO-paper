@@ -1,0 +1,31 @@
+	Estimate	Std. Error	z value	Pr(>|z|)		Odds ratio
+(Intercept)	-2.01684	0.20833	-9.681	< 2e-16	***	0.133075
+Cyano_risk: 1	1.00834	0.2496	4.04	5.35E-05	***	2.741047
+Vaccine_status: 1	-0.89797	0.08734	-10.281	< 2e-16	***	0.407396
+Poverty_category: low	-0.20254	0.22126	-0.915	0.359976		0.816654
+Poverty_category: middle	0.52796	0.2125	2.484	0.012974	*	1.69547
+Access_category: reasonable	-0.02144	0.07162	-0.299	0.764633		0.978788
+Access_category: strong	0.16185	0.08974	1.803	0.071314	.	1.175684
+"Cyano_risk: 1 
+vaccine_status: 1"	0.12592	0.1146	1.099	0.271853		1.134191
+"Cyano_risk: 1
+Poverty_category: low"	-0.87621	0.25508	-3.435	0.000592	***	0.416358
+"Cyano_risk: 1
+Poverty_category: middle"	-1.47141	0.22937	-6.415	1.41E-10	***	0.229602
+"Cyano_risk: 1
+Access_category: reasonable"	-0.2161	0.13448	-0.161	0.872319		0.805655
+"Cyano_risk: 1
+Access_category: strong"	-0.04314	0.15504	-0.278	0.780824		0.957777
+*** p < 0.001						
+*						
+.						
+						
+						
+baseline group						
+cyano risk: 0						
+vaccine status: 0						
+poverty category: high						
+access category: low						
+						
+						
+						
