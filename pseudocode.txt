@@ -1,0 +1,44 @@
+Starting in Python
+1. Starting with COVID-19 Patients Summary Facts Table (LDS)
+
+3. Filtered out under 18 years old
+
+4. Separate patients according to high risk and low risk zip codes.
+
+5. Filter out patients with comorbidities: Substance use disorder, Smoking, Organ transplant, Pregnancy, cardiovascular disease, stroke, diabetes, obesity
+
+6. Use Chi Square test to see if demographics are independent of high risk and low risk to cyanobacteria exposure. Maybe will have to see if liver and kidney disease are balanced. These results will inform the propensity matching.
+Sex appears to be close to balanced
+Race and ethnicity are not balanced
+Vaccination is not balanced
+Treatment is balanced
+Used t-test for age: age is balanced
+
+7. COVID severity is transformed to binary
+Mild is 0
+Moderate, Severe, and Death is 1
+
+8. Adding SDoH data:
+Poverty (percent of residents in ZCTA that live at or below poverty line)
+Access (number of MDs per 1000 people by county)
+
+9. Removed “no matching concept” from Sex and “unknown” from race
+
+10. Exported data table from Python for ingestion into R Studio
+
+Moved to R
+11. Decided to discretize age, poverty, and access
+
+12. Reorganized race to include Latino, White, Black, and Other
+
+13. Using MatchIt in R to do propensity matching
+Using this guide https://cran.r-project.org/web/packages/MatchIt/vignettes/MatchIt.html
+Best matching method is exact
+Using ATT estimand
+Output kernel density plot to visualize improvement in matching
+
+14. Matched on age category, race category, and sex
+
+15. Used glm model and included vaccine status, poverty category and access category in the model
+Output results table with Odds Ratio calculated
+Output forest plot to visualize Odds Ratios
